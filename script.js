@@ -27,8 +27,11 @@ function appendData(data) {
 		const div = document.createElement('div');
 		div.className = 'book';
 
+		const imageDiv = document.createElement('div');
+		imageDiv.className = 'imageDiv';
 		const imageTag = document.createElement('img');
 		imageTag.src = image;
+		imageDiv.append(imageTag);
 
 		const bookName = document.createElement('h1');
 		bookName.innerText = name;
@@ -39,16 +42,12 @@ function appendData(data) {
 		const bookPrice = document.createElement('button');
 		bookPrice.innerText = `Rs. ${price}`;
 
-		div.append(imageTag, bookName, authorName, bookPrice);
+		div.append(imageDiv, bookName, authorName, bookPrice);
 		container.append(div);
 	});
 }
 
 
-
-
-
-
-
+appendData(data);
 
 

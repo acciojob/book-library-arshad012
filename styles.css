@@ -5,10 +5,29 @@ body {
 .book-library {
 	background-color: #ffffff;
 }
+.book {
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	width: 400px;
+	padding: 10px 20px;
+	margin-bottom: 20px;
+}
+.imageDiv {
+	text-align: center;
+}
+.book h1 {
+	margin: 0;
+}
 .book p {
 	color: #777777;
+	margin: 0;
 }
 .book button {
-	color: #2ecc71;
+	background-color: #2ecc71;
+	width: 100%;
+	border: none;
+	padding: 5px 0;
+	font-size: 18px;
+	color: white;
+	border-radius: 5px;
 }
 
