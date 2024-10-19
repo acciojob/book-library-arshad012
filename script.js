@@ -33,7 +33,7 @@ function appendData(data) {
 		imageTag.src = image;
 		imageDiv.append(imageTag);
 
-		const bookName = document.createElement('h2');
+		const bookName = document.createElement('h1');
 		bookName.innerText = name;
 
 		const authorName = document.createElement('p');
